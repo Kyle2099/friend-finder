@@ -14,5 +14,5 @@ Displaying the closest match of the survey results.
 
 # The Application is deployed on Heroku.
 
-https://friend-finder234.herokuapp.com/ - automatic!
+
 [Friend-Finder](https://friend-finder234.herokuapp.com/)
