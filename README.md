@@ -11,3 +11,8 @@ Converting each user's results into a simple array of numbers. I am able to comp
 The closest match will be the user with the least amount of difference.
 
 Displaying the closest match of the survey results.
+
+# The Application is deployed on Heroku.
+
+https://friend-finder234.herokuapp.com/ - automatic!
+[Friend-Finder](https://friend-finder234.herokuapp.com/)

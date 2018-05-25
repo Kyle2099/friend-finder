@@ -4,6 +4,9 @@ body {
     color: white;
     background-size: cover;
 }
+.modal {
+    color: black;
+}
 
 a,
 a:hover,
