@@ -17,13 +17,32 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 	<style>
+		body {
+			background-color: black;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 1) 100%), url(https://wallpaperstock.net/die-h%C3%B6hlen-von-orion-wallpapers_24719_1280x800.jpg) repeat 0 0;
+			color: white;
+		}
+
+		a,
+		a:hover,
+		a:visited,
+		a:focus {
+			color: white;
+		}
+
 		#yourImg,
 		#matchImg {
 			width: 100%;
 		}
 
+		.carousel {
+			background: linear-gradient(to bottom, rgba(14, 1, 1, .7) 0%, rgba(0, 0, 0, .7) 100%);
+			border-radius: 20px;
+			margin-top: 50px;
+		}
+
 		.carousel-inner {
-			background-color: grey;
+
 			height: 375px;
 		}
 
@@ -32,20 +51,32 @@
 			padding: 65px;
 		}
 
-		input, select,
-		input:focus, select:focus {
+		h3 {
+			font-size: 1.5em;
+		}
+		h4 {
+			font-size: 2.5em;
+		}
+
+		input,
+		select,
+		input:focus,
+		select:focus {
 			border: 0;
 			box-shadow: 0 0 15px rgba(0, 38, 255, 1);
 			outline: 0;
 		}
+
 		#submit {
 			width: 300px;
 			height: 200px;
+			border-radius: 20px;
 		}
 
 		.carousel-indicators li {
 			transition: width .5s;
 		}
+
 		.carousel-indicators li.active {
 			background-color: blue;
 			width: 40px;
@@ -58,10 +89,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2>Survey Questions</h2>
-				<hr>
-
-
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
 					<ol class="carousel-indicators">
 						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -83,18 +110,18 @@
 								<strong>About You</strong>
 							</h3>
 							<div class="row">
-								<div class="col-4 offset-md-2">
-										<h4>Name (required)</h4>
-										<input type="text" name="" id="name" class="form-control-lg" required="">
+								<div class="col-5 offset-md-1">
+									<h4>Your Name</h4>
+									<input type="text" name="" id="name" class="form-control-lg" required="">
 								</div>
-								<div class="col-4">
-										<h4>Link to Photo (required)</h4>
-										<input type="text" name="" id="photo" class="form-control-lg" required="">
+								<div class="col-5">
+									<h4>Your Photo URL</h4>
+									<input type="text" name="" id="photo" class="form-control-lg" required="">
 								</div>
 							</div>
-							
 
-							
+
+
 						</div>
 						<div class="carousel-item">
 							<h3>
@@ -262,6 +289,7 @@
 				<footer class="footer">
 					<div class="container">
 						<p>
+							<a href="/">Home</a> |
 							<a href="/api/friends">API Friends List</a> |
 							<a href="https://github.com/Kyle2099/friend-finder">GitHub Repo</a>
 						</p>
@@ -343,7 +371,7 @@
 								return false;
 							}
 						});
-						
+
 						return isValid;
 					}
 
