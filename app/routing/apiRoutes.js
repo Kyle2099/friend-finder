@@ -1,12 +1,3 @@
-// A GET route with the url /api/friends. 
-// 	This will be used to display a JSON of all possible friends.
-// A POST routes /api/friends. 
-// 	This will be used to handle incoming survey results. 
-// 	This route will also be used to handle the compatibility logic.
-
-//These routes for our data. Help determine data user sees and data can post
-
-
 var friendsData = require ('../data/friends.js');
 
 module.exports = function (app) {
@@ -50,9 +41,9 @@ module.exports = function (app) {
 
 		// console.log(friendsData);
 
-		// Identify the closest match
-		var lowestDiff = 9999; // Lowest difference value found so far
-		var chosenFriend = -1; // Store array position of the friend with the lowest difference
+		
+		var lowestDiff = 9999; 
+		var chosenFriend = -1; 
 
 		console.log('-------------- Looking for closest match')
 		for (let f=0;f<friendsData.length;f++) {

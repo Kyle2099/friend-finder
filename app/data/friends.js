@@ -1,5 +1,3 @@
-//data being stored on the server
-
 var friendsData = [
   {
     name: "Yoda",
